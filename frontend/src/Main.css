@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Droid + Serif:400,700,400italic,700italic");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+input,
+p {
+  font-size: 2rem;
+}
+
+/* Nav Header Styling */
+.main-head {
+  background: rgba(2, 61, 25, 0.767);
+  min-height: 10vh;
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.main-head a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-head ul {
+  display: flex;
+  font-family: "League Spartan";
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding-top: 1.5rem;
+  flex: 1 1 40rem;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: black;
+}
+
+.main-head h1 {
+  font-family: "Nunito";
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: black;
+  font-size: 4rem;
+  padding-top: 1rem;
+  color: white;
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: black;
+}
+
+/* About Page Styling */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: 100%;
+  background-position: center;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about-img {
+  flex: 0 0 41.3rem;
+}
+
+.about-content {
+  color: white;
+  flex: 1 1 10rem;
+  text-align: center;
+  padding: 5%;
+  background: rgba(19, 39, 26, 0.8);
+  margin: 10%;
+  border-radius: 3rem;
+}
+
+/* Login Page and Sign Up and Location Form Styling*/
+.login-section {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-panel {
+  background: rgba(19, 39, 26, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 3rem;
+  border-color: black;
+}
+
+.login-panel h1 {
+  text-align: center;
+  padding: 4rem;
+}
+
+.username-form,
+.password-form,
+.email-form {
+  text-align: center;
+  padding: 2rem;
+}
+
+.location-form {
+  text-align: center;
+  padding: 3rem;
+}
+
+.login-panel label {
+  margin: 0rem 3rem;
+  font-family: "League Spartan";
+  font-size: 2rem;
+}
+
+.login-panel button {
+  font-family: "League Spartan";
+  font-size: 2rem;
+  color: white;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem;
+  border-style: none;
+  background-color: #023d19;
+}
+
+/* Feed Styling */
+.feed-section {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Example Card CSS*/
+.blog-card {
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.Card-Container {
+  margin: auto;
+  max-width: 30vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 40rem;
+  background-color: green;
+  display: flex;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-card.spring-fever {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/bg-blog-card.jpg)
+    no-repeat;
+}
+.blog-card .color-overlay {
+  /* Rectangle 11: */
+  margin: auto;
+  background: rgba(19, 39, 26, 1);
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+.blog-card .gradient-overlay {
+  /* bg-gradient: */
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  top: 350px;
+  left: 0;
+  z-index: 15;
+}
+.blog-card:hover .card-info {
+  opacity: 1;
+  bottom: rem;
+}
+.blog-card:hover .color-overlay {
+  background: rgb(59, 122, 63);
+}
+
+.title-content {
+  text-align: center;
+  margin: 70px 0 0 0;
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #d0bb57;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+
+hr {
+  width: 50px;
+  height: 3px;
+  margin: 20px auto;
+  border: 0;
+  background: #d0bb57;
+}
+
+.intro {
+  width: 170px;
+  margin: 0 auto;
+  color: #dce3e7;
+  font-family: "Droid Serif", serif;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 18px;
+}
+
+.card-info {
+  width: 100%;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 50px;
+  color: #dce3e7;
+  font-family: "Droid Serif", serif;
+  font-style: 20px;
+  line-height: 24px;
+  z-index: 20;
+  opacity: 0;
+}
+
+.utility-info {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 20;
+}
+
+.utility-list {
+  list-style-type: none;
+  margin: 0 0 30px 20px;
+  padding: 0;
+  width: 100%;
+}
+.utility-list li {
+  margin: 0 15px 0 0;
+  padding: 0 0 0 22px;
+  display: inline-block;
+  color: #dce3e7;
+  font-family: "Roboto", sans-serif;
+}
+.utility-list li.comments {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-chat.svg)
+    no-repeat 0 0.1em;
+}
+.utility-list li.date {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-calendar.svg)
+    no-repeat 0 0.1em;
+}
+
+/* Comments */
+@media (max-width: 3000px) {
+  /* Reverse the order of elements in the user comments,
+  so that the avatar and info appear after the text. */
+  .comment.user-comment .info {
+    order: 3;
+  }
+
+  .comment.user-comment .avatar {
+    order: 1;
+  }
+
+  .comment.user-comment p {
+    order: 2;
+  }
+
+  /* Make the paragraph in the comments take up the whole width,
+  forcing the avatar and user info to wrap to the next line*/
+  .comment p {
+    width: 100%;
+  }
+
+  .comment-section {
+    display: block;
+  }
+
+  .comment.user-comment {
+    text-align: left;
+    color: white;
+    flex: 1 1 10rem;
+    padding: 5%;
+    background: rgba(19, 39, 26, 0.8);
+    margin: 10%;
+    border-radius: 3rem;
+    width: 100%;
+  }
+
+  .Comment-content {
+    text-align: left;
+  }
+
+  /* Align toward the beginning of the container (to the left)
+  all the elements inside the author comments. */
+  .comment.author-comment {
+    justify-content: flex-start;
+  }
+
+  .replies-container {
+    display: flex;
+    background: white;
+    justify-items: center;
+  }
+
+  .text-area {
+    justify-content: center;
+    height: 10rem;
+    width: 50%;
+    padding-right: 10%;
+  }
+
+  .write-new button {
+    font-family: "League Spartan";
+    font-size: 2rem;
+    color: white;
+    justify-content: center;
+    padding: 1.5rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-style: none;
+    background-color: #023d19;
+  }
+}
